@@ -4,10 +4,14 @@
 2. In DNS, add record to VM IP
 3. Install Certbot in VM (https://dl.eff.org/certbot-beta-installer-win32.exe)
 4. Run certboot in mode webroot to generate the certificate
+
 ``certbot certonly --webroot``
+
 5. Install openssl (needed to convert pem certificate to pfx)
 6. Export certificate from pem to pfx
-``openssl pkcs12 -export -out cert.pfx -inkey privatekey.pem -in cert.pem´´
+
+``openssl pkcs12 -export -out cert.pfx -inkey privatekey.pem -in cert.pem``
+
 7. Install pfx on SO
 - Console Root
   - Win+R type mmc
