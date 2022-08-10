@@ -7,7 +7,7 @@
 
 ``certbot certonly --webroot``
 
-5. Install openssl (needed to convert pem certificate to pfx)
+5. Install openssl (needed to convert pem certificate to pfx) - https://cytranet.dl.sourceforge.net/project/openssl-for-windows/OpenSSL-1.1.1h_win32.zip
 6. Export certificate from pem to pfx
 
 ``openssl pkcs12 -export -out cert.pfx -inkey privatekey.pem -in cert.pem``
